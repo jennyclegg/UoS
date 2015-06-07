@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'UoS';
+  src: url('fonts/steph-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/steph-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/steph-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/steph-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/steph-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.uosfont { font-family:"UoS", "Times New Roman", Times, serif; }
+
+html { font-size:14px; }
+body { font-family: 'Open Sans', sans-serif; background-color:#F1F2F2; padding:0px; margin:0px;  }
+section { width:96%; margin:auto; max-width:1200px; position:relative;}
+p { line-height:1.8rem; }
+.blackbar { background-color:#030000; color:#ffffff; height:35px; padding-top:5px; text-align:right; }
+
+a:link { text-decoration:none; color:#414042; }
+a:visited { text-decoration:none; color:#414042; }
+a:active { text-decoration:none; color:#0496DC; }
+a:hover { text-decoration:none; color:#0496DC; }
+
+nav { position:absolute; right:0px; width:150px; display:none; margin-top:40px; z-index:100; }
+
+nav ul li a:link { color:#ffffff; text-decoration:none; }
+nav ul li a:visited { color:#ffffff; text-decoration:none; }
+nav ul li a:active { color:#FFCC33; text-decoration:none; }
+nav ul li a:hover { color:#FFCC33; text-decoration:none; }
+
+nav ul { margin:0; padding:0px !important; list-style:none; }
+nav ul li { width:100%; }
+nav ul li a { display:block; float:left; width:100%; padding:8px; background-color:#030000; box-sizing:border-box; text-decoration:none; }
+
+#acct img { vertical-align:middle; height:20px;}
+#acct { display:table-cell;  vertical-align:middle; position:relative; float:right; top:5px; cursor:pointer; }
+
+.school {  color:#414042; font-size:1.2rem; line-height:1.8rem; }
+
+.details { padding:1.5%; line-height:2rem; color:#414240; font-size:1.2rem; background-color:#EAEAEE; margin-bottom:30px; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; }
+
+.white {  background-color:#ffffff; padding:2%; box-sizing:border-box; }
+.infotext {  max-height:999999px; }
+.main { width:75%; margin-right:5%; float:left; }
+.side { width:20%; background-color:#343434; float:right; box-sizing:border-box; padding:1.5%; color:#ffffff; }
+
+.side a { cursor:pointer; }
+
+.side a:link { text-decoration:none; color:#ffffff; }
+.side a:visited { text-decoration:none; color:#ffffff; }
+.side a:active { text-decoration:none; color:#ffffff; }
+.side a:hover { text-decoration:none; color:#ffffff; }
+
+.side h2 {color:#ffffff; font-size:1.5rem; margin-top:0px; margin-bottom:20px; }
+
+.side .searchform { padding:2%; margin:0px; border:none; width:100%; box-sizing:border-box; }
+.side label { font-size:0.8rem; }
+
+#sharebutts { display:none; }
+
+.apply { display:block; width:100%; margin:0px; border:none; color:#ffffff; background-color:#bbbbbb; text-align:center; font-size:1.2rem; padding:2%; box-sizing:border-box; margin-top:20px; }
+.apply:hover { background-color:#0496DC; }
+.backtt { display:block; cursor:pointer; color:#888888 !important; text-align:right; font-size:0.9rem; }
+
+.icon { height:25px; vertical-align:middle; }
+
+h1 { font-family:"UoS", "Times New Roman", Times, serif; color:#414042; font-size:3.5rem; font-weight:normal; padding-top:15px; }
+h2 { font-family:"UoS", "Times New Roman", Times, serif; color:#414042; font-size:3rem; font-weight:normal; margin-bottom:5px; margin-top:10px; }
+h3 { font-family:"UoS", "Times New Roman", Times, serif; color:#414042;  font-size:1.7rem; font-weight:normal; margin-top:0px; }
+
+#logo { width:218px; background-image:url(images/sm-logo.gif); float:left; margin-right:30px; margin-bottom:20px; }
+
+.mob { display:none; }
+.hide { display:block; }
+.floatleft { float:left; }
+.alignright { text-align:right; }
+.valignbot { vertical-align:bottom; }
+.imgResp { height:auto; }
+.width100 { width:100%; }
+.width50 { width:50%; }
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.joblist { border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; margin-bottom:20px; }
+.joblist h3 { margin:0px; padding:0px; }
+.joblist td { vertical-align:middle; }
+.closedate { color:#666666; font-size:0.8rem; }
+
+.viewbutt { display:inline-block; color:#ffffff !important; text-transform:uppercase; background-color:#FC3; padding:2%; width:85px; text-align:center; margin:0px; margin-right:10px; }
+.savebutt { display:inline-block; color:#ffffff !important; text-transform:uppercase; background-color:#666; padding:2%; width:85px; text-align:center; margin:0px; cursor:pointer; }
+.shareicon { width:25%; margin:3%; margin-top:7%; }
+
+
+@media (max-width: 770px), only screen and (min-device-width: 360px) and (orientation:portrait) {	  
+html { font-size:3vw; }
+
+h2 { font-size:2.6rem; margin-bottom:5px; margin-top:0px; }
+.jobsearch h2 { font-size:2.8rem; }
+.listing h3 { font-family: 'Open Sans', sans-serif; background-color:#333333; color:#ffffff; padding:2%; margin-bottom:10px; text-transform:uppercase; font-size:1.3rem }
+
+.hide { display:none; }
+.mob { display:inline-block; }
+
+.listing .white { padding:0px; margin:0px; background-color:transparent; }
+.infotext { display:none; font-size:1.2rem; line-height:1.8rem; }
+
+.thedets { font-size:120%; }
+
+.blackbar { height:auto; padding:2.5% !important; font-size:1.2rem; }
+#acct img { height:20px; }
+#acct { top:0px; }
+
+nav { width:50%; padding-top:0%; }
+nav ul li a { padding:10%; }
+
+#logo { width:50%; background-image:url(images/lrg-logo.gif); float:left; background-size:contain; margin-bottom:0px; }
+
+.main { width:100%; }
+.side { width:100%; font-size:1.6rem; margin:0px; margin-bottom:-10px; }
+.side label { font-size:1.3rem ; }
+
+.apply { margin-bottom:2.5%; font-size:1.5rem; color:#ffffff !important }
+.details { margin-bottom:10px; }
+.details .width50 { width:100%; }
+
+.icon { height:30px; }
+
+.searchform { font-size:1.4rem; }
+.expand { text-align:center; margin:2%; font-size:1.2rem; }
+.advancesearch { display:none; }
+.jobsearch { margin-bottom:2.5%; }
+
+.viewbutt { font-size:1.3rem; margin-right:0px; margin-bottom:7px; }
+.savebutt { font-size:1.3rem; }
+.thebutts { width: 150px; }
+
+}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The University of Sheffield - Lecturer in Theatre Position</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="UOS.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+	$(window).on('scroll', function() {
+		
+		var y_scroll_pos = window.pageYOffset;
+		var y_pos = $('#details').offset() ;
+		
+		
+			if(y_scroll_pos > y_pos.top) {
+				document.getElementById('side').style.marginTop = (y_scroll_pos-y_pos.top)+'px' ;
+			}
+			if(y_scroll_pos < y_pos.top) {
+				document.getElementById('side').style.marginTop = '0px' ;
+			}
+	
+	});
+	
+	
+	
+	
+	$('#savelink').click(
+		function() {
+    $(this).html('<img src="images/save.png" class="icon" alt="Add to Save List" /> &nbsp; Job Saved');
+	}
+	);
+	
+	
+	
+	$( "#sharetools" ).click(function() {
+	  $( "#sharebutts" ).fadeIn( "slow", function() {
+	  });
+	});
+	
+		$('#acct').click(
+		function() {
+			if($('nav').css('display') == 'none') {
+				$('nav').fadeIn(500);
+			} else {
+				$('nav').fadeOut(500);
+			}
+		}
+		);
+	
+	
+		$('.togtext').click(
+		function() {
+			
+			
+			var info = '#'+$(this).attr('rel') ;
+			
+			if($(info).css('display') == 'none') {
+				$(info).fadeIn(500);
+			} else {
+				$(info).fadeOut(500);
+			}
+		}
+		);
+	
+	
+	
+});
+
+
+function toggle(div) {
+	
+	if(document.getElementById(div).style.display == 'block') {
+		document.getElementById(div).style.display = 'none' ;
+	} else {
+		document.getElementById(div).style.display = 'block' ;
+	}
+	
+}
+</script>
+</head>
+<body>
+
+<div class="blackbar">
+<section class="clearfix">
+<div id="acct"><img src="images/acct.gif" alt="Account" /> Your Account</div>
+<nav>
+<ul>
+<li><a href="">Your Details</a></li>
+<li><a href="">Your Saved Jobs</a></li>
+<li><a href="">Your Applications</a></li>
+<li class="mob"><a href="jobs.html">SEARCH JOBS</a></li>
+</ul>
+</nav>
+
+</section>
+</div>
+
+<section>
+<header class="clearfix">
+<div id="logo"><img src="images/logosp.gif" alt="University of Sheffield" class="width100 imgResp" /></div>
+<h1>Jobs</h1>
+</header>
+</section>
+
+<section class="clearfix" id="possect">
+<h2 class="job-title">Lecturer In Theatre</h2>
+<div class="school">School of English<br>
+Faculty of Arts and Humanities</div>
+<br>
+<br>
+
+
+<div id="side" class="side">
+<span class="hide"><a href="jobs.html"><img src="images/search.png" class="icon" alt="Job Search" /> &nbsp;Back to Search</a><br><br></span>
+
+<a href="Lecturer-in-Theatre.pdf" target="_blank"><img src="images/pdf.png" class="icon" alt="PDF Job Details" /> &nbsp;<span class="mob">Click to Download&nbsp;</span>FULL Job Details</a>
+
+<span class="hide"><br><a id="savelink"><img src="images/save.png" class="icon" alt="Add to Save List" /> &nbsp;Save Job</a><br><br></span>
+
+<div class="hide"><a id="sharetools"><img src="images/email.png" class="icon" alt="Share Job" /> &nbsp;Share Job</a><br>
+<div id="sharebutts">
+<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]=Job Position&p[summary]=Lecturer in Theatre at The University of Sheffield&p[url]=http://google.com/" target="_blank"><img src="images/facebook.png" alt="Share on Facebook" class="shareicon" /></a>
+<img src="images/twitter.png" alt="Share on Twitter" class="shareicon" />
+<a HREF="mailto:?subject=Lecturer in Theatre Job&body=Lecturer in Theatre position open at The University of Sheffield - http://www.jobaddress.com/"><img src="images/send.png" alt="Share by Email" class="shareicon" /></a>
+</div></div>
+
+<a class="apply hide" href="">APPLY NOW</a>
+
+</div>
+
+
+<a class="apply mob" href="">APPLY FOR THIS POSITION</a>
+
+<div class="main listing">
+
+<div id="details" class="details clearfix">
+    <div class="width50 floatleft">
+    <strong>Job Reference :</strong> UOS010486<br>
+    <strong>Closing Date :</strong> 22nd June 2015<br>
+    </div>
+    <div class="width50 floatleft">
+    <strong>Salary : </strong> &pound;38,511 - &pound;45,594 per annum<br>
+    <strong>Contract Hours :</strong> Full-time
+    </div>
+</div>
+
+
+	<div class="white">
+
+    <h3 class="togtext" rel="jobrole">Job Role</h3>
+    <div id="jobrole" class="infotext">
+    <p>The successful candidate will contribute primarily to practice-based and seminar teaching on
+    the English and Theatre undergraduate degree. You will work with the existing team of full-time
+    academic staff and the theatre manager, who are together responsible for undergraduate and
+    postgraduate theatre modules within the School. You will also take responsibility for delivering
+    selected core studio-based practical modules taken by students following the undergraduate
+    English and Theatre degree. There may also be opportunities to contribute to the MA in Theatre
+    and Performance. You will contribute to the strong academic profile of the School, through the
+    development of written publications and/or through practice-based research. Although the
+    main research and teaching interests of the current Theatre staff relate primarily to British
+    theatre since 1900, we welcome applications from any field of theatre history and performance
+    practice. A practical and research interest in contemporary and experimental theatre forms
+    would be an advantage; however, it is likely that the person appointed will also be expected to
+    take weekly seminars on relatively broadly-based theatre modules, and to deliver some
+    lectures.</p>
+    <p>
+    All staff are expected to assist as required with the administration of the School, to foster research
+    and teaching at all levels of the curriculum, to develop research projects and related ventures, and
+    to help recruit good MA and research students.</p>
+    </div>
+    
+    
+    <h3 class="togtext" rel="jobspec">Job Specification</h3>
+    <div id="jobspec" class="infotext">
+    <p>Main Duties and Responsibilities
+</p>
+    <ul>
+<li>Contribute fully to the School of English as a teacher, researcher and leader.</li>
+<li>Design teaching programmes for courses, which includes identifying learning objectives and
+selecting appropriate curricula, selecting teaching methods, resources and reading, and
+determining, designing and producing study material.</li>
+<li>Deliver teaching and undertake assessments of modules. This will include preparing
+teaching material, communicating material and encouraging critical engagement with it;
+observing and reacting to student interventions; responding to questions outside class
+times and introducing innovative teaching methods as appropriate.</li>
+<li>Coordinate team teaching, including liaison with other academic staff and/or postgraduate
+assistants, to ensure the course complements other courses taken by students.</li>
+<li>Supervise students’ projects and dissertations.</li>
+<li>Undertake course evaluation, including facilitating student feedback, reflecting on own
+teaching design and delivery; and implementing ideas for improving own performance.</li>
+<li>Undertake curriculum development work, planning, development and evaluation of courses
+and course materials, and supervise course provision.</li>
+<li>Engage in teaching that enhances the design and delivery of the department’s existing
+undergraduate and postgraduate programmes.</li>
+<li>Delegate to and monitor the work of research students as appropriate.</li>
+<li>Carry out a pastoral role for students such as acting as personal tutor. If necessary refer
+them to the appropriate authority for guidance.</li>
+<li>Conduct personal research of an international standard, which includes identifying
+literature and updating own knowledge; assessing the validity of the relevant literature and
+its contribution to the development of own field.</li>
+<li>Produce written research work for publication in high quality, key journals and give
+presentations at seminars and conferences.</li>
+<li>Determine research objectives, and initiate and implement a programme of research.</li>
+<li>Disseminate research findings through internationally recognised peer reviewed
+publications outputs and conferences.</li>
+<li>Identify appropriate sources of funding and prepare research proposals for funding bodies.</li>
+<li>Participate in the administrative processes of the Department including committee
+membership, quality assurance procedures and recruitment and admission of students.</li>
+<li>Contribute, as appropriate, to the Faculty’s knowledge transfer and civic engagement
+agenda.</li>
+<li>Involvement in professional activities such organising conferences, committee membership
+and involvement with professional bodies.</li>
+<li>Maintain and develop links with professional practitioners and the Theatre industry.</li>
+<li>Self-generate work through research and scholarly pursuits plus innovation in teaching and
+administration.</li>
+<li>Working collaboratively with colleagues, actively participate in
+Departmental/Faculty/University committees in order to contribute to the development of
+teaching/learning and research policy.</li>
+<li>Respond appropriately, promptly and proactively to requests and issues relating to
+teaching, supervising students and administration.</li>
+<li>Deal with reactive requests daily, such as those relating to teaching, supervising students,
+and administrative tasks.</li>
+<li>You will make a full and active contribution to the principles of the ‘Sheffield Academic’.
+These include the achievement of excellence in applied teaching and research, and scholarly
+pursuits to make a genuine difference in the subject area and to the University’s
+achievements as a whole. Further information on the underpinning values of the Sheffield
+Academic can be found at: Sheffield Academic.</li>
+<li>Any other duties commensurate with the grade of the post.</li>
+</ul>
+
+    </div>
+    
+    </div><!--white-->
+
+</div>
+
+
+</section>
+
+</body>
+</html>

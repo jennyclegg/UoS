@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The University of Sheffield - Job Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="UOS.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+	$(window).on('scroll', function() {
+		
+		var y_scroll_pos = window.pageYOffset;
+		var y_pos = $('.main').offset() ;
+		
+		
+			if(y_scroll_pos > y_pos.top) {
+				document.getElementById('side').style.marginTop = (y_scroll_pos-y_pos.top)+'px' ;
+			}
+			if(y_scroll_pos < y_pos.top) {
+				document.getElementById('side').style.marginTop = '0px' ;
+			}
+	
+	});
+	
+	
+	$('.savebutt').click(
+		function() {
+    $(this).animate({backgroundColor: "#e3e3e3"}, 'fast');
+    $(this).html('SAVED');
+	}
+	);
+	
+	
+	$('#acct').click(
+		function() {
+			if($('nav').css('display') == 'none') {
+				$('nav').fadeIn(500);
+			} else {
+				$('nav').fadeOut(500);
+			}
+	}
+	);
+	
+	$('.expand').click(
+		function() {
+			if($('.advancesearch').css('display') == 'none') {
+				$(this).css('display', 'none');
+				$('.advancesearch').fadeIn(500);
+			} else {
+				$('.advancesearch').fadeOut(500);
+				$(this).css('display', 'block');
+			}
+	}
+	);
+	
+	
+});
+
+
+function toggle(div) {
+	
+	if(document.getElementById(div).style.display == 'block') {
+		document.getElementById(div).style.display = 'none' ;
+	} else {
+		document.getElementById(div).style.display = 'block' ;
+	}
+	
+}
+</script>
+</head>
+<body>
+
+<div class="blackbar">
+<section class="clearfix">
+<div id="acct"><img src="images/acct.gif" alt="Account" /> Your Account</div>
+<nav>
+<ul>
+<li><a href="">Your Details</a></li>
+<li><a href="">Your Saved Jobs</a></li>
+<li><a href="">Your Applications</a></li>
+</ul>
+</nav>
+
+</section>
+</div>
+
+<section>
+<header class="clearfix">
+<div id="logo"><img src="images/logosp.gif" alt="University of Sheffield" class="width100 imgResp" /></div>
+<h1>Jobs</h1>
+</header>
+</section>
+
+<section class="clearfix" id="possect">
+<h2 class="job-title">Current Positions</h2>
+<br>
+<span class="hide">
+<br>
+</span>
+
+
+<div id="side" class="side jobsearch">
+<h2>Job Search</h2>
+<form method="post" id="search">
+<input name="searchText" id="searchText" class="searchform" type="text" placeholder="Enter Search Term/Ref. Number">
+
+<span class="advancesearch">
+<br><br>
+Job Type :
+<p>
+  <label>
+    <input type="checkbox" name="jobType" value="0" id="jobType_0">
+    All </label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="1" id="jobType_1">
+    Academic</label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="2" id="jobType_2">
+    Clinical &amp; Health</label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="3" id="jobType_3">
+    Facilities Support</label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="4" id="jobType_4">
+    Management, Admin &amp; Professional Research</label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="5" id="jobType_5">
+    Secretarial &amp; Clerical</label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="6" id="jobType_6">
+    Teaching</label>
+  <br>
+  <label>
+    <input type="checkbox" name="jobType" value="7" id="jobType_7">
+    Technical</label>
+  <br>
+</p>
+
+<select name="contractType" class="searchform">
+<option value="">Contract Type</option>
+<option value="">Full Time</option>
+<option value="">Part Time</option>
+</select>
+
+<br>
+<br>
+</span>
+<div class="mob expand">Click to expand search options</div>
+<input type="submit" name="refine" id="refine" value="Refine Search" class="apply">
+
+</form>
+
+
+</div>
+
+<div class="main">
+
+	<div class="joblist white" id="job_1">
+	<table class="width100">
+    	<tr>
+        	<td><h3>Lecturer in Theatre</h3></td>
+            <td class="alignright"><strong>Ref :</strong> UOS010486</td>
+        </tr>
+    	<tr>
+    	  <td class="thedets">£38,511 - £45,594<br>
+   	      <em>Full-time</em></td>
+    	  <td class="thebutts alignright valignbot" rowspan="2"><br>
+          <a class="viewbutt" href="listing.html">View Job</a>  
+		  <a class="savebutt" id="save1">Save Job</a></td>
+  	  </tr>
+    	<tr>
+    	  <td>
+   	      <span class="closedate">Closes : 22nd June 2015</span></td>
+   	    </tr>
+    </table>
+	</div>
+	<!--white-->
+
+	<div class="joblist white" id="job_2">
+	<table class="width100">
+    	<tr>
+        	<td><h3>Lecturer in Strategic Management</h3></td>
+            <td  class="alignright"><strong>Ref :</strong> UOS010809</td>
+        </tr>
+    	<tr>
+    	  <td class="thedets">£38,511 - £54,841<br>
+   	      <em>Full-time</em></td>
+    	  <td class="thebutts alignright valignbot" rowspan="2" ><br>
+          <a class="viewbutt" href="listing.html">View Job</a>  
+		  <a class="savebutt" id="save2">Save Job</a></td>
+  	  </tr>
+    	<tr>
+    	  <td>
+   	      <span class="closedate">Closes : 29th June 2015</span></td>
+   	    </tr>
+    </table>
+	</div>
+	<!--white-->
+
+	<div class="joblist white" id="job_3">
+	<table class="width100">
+    	<tr>
+        	<td><h3>Chair in Marketing</h3></td>
+            <td  class="alignright"><strong>Ref :</strong> UOS010782</td>
+        </tr>
+    	<tr>
+    	  <td class="thedets">Professorial Pay Scheme<br>
+   	      <em>Full-time</em></td>
+    	  <td class="thebutts alignright valignbot" rowspan="2" ><br>
+          <a class="viewbutt" href="listing.html">View Job</a>  
+		  <a class="savebutt" id="save3">Save Job</a></td>
+  	  </tr>
+    	<tr>
+    	  <td>
+   	      <span class="closedate">Closes : 13th July 2015</span></td>
+   	    </tr>
+    </table>
+	</div>
+	<!--white-->
+
+	<div class="joblist white" id="job_4">
+	<table class="width100">
+    	<tr>
+        	<td><h3>Chair in Operation &amp; Technology Management</h3></td>
+            <td  class="alignright"><strong>Ref :</strong> UOS010784</td>
+        </tr>
+    	<tr>
+    	  <td class="thedets">Professorial Pay Scheme<br>
+   	      <em>Full-time</em></td>
+    	  <td class="thebutts alignright valignbot" rowspan="2" ><br>
+          <a class="viewbutt" href="listing.html">View Job</a>  
+		  <a class="savebutt" id="save4">Save Job</a></td>
+  	  </tr>
+    	<tr>
+    	  <td>
+   	      <span class="closedate">Closes : 13th July 2015</span></td>
+   	    </tr>
+    </table>
+	</div>
+	<!--white-->
+
+</div>
+
+
+</section>
+
+</body>
+</html>
